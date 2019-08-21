@@ -1,14 +1,25 @@
-var http = require('http')
-var fs = require('fs')
+var express = require('express');
+var app = express();
+var path = require('path');
 
-var server = http.createServer(function(req, res) {
-    console.log('request was made: ' + req.url)
-    res.writeHead(200, {'Content-Type': 'text/html'})
-    var myReadStream = fs.createReadStream(__dirname + '/index.html', 'utf8')
-    myReadStream.pipe(res)
-})
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
 
+app.get('/index.html', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
 
+app.get('/webapps.html', function(req, res) {
+    res.sendFile(path.join(__dirname + '/webapps.html'));
+});
 
-server.listen(3000, '127.0.0.1')
-console.log('listening on 3000')
+app.get('/iOSapps.html', function(req, res) {
+    res.sendFile(path.join(__dirname + '/iOSapps.html'));
+});
+
+app.get('/contact.html', function(req, res) {
+    res.sendFile(path.join(__dirname + '/contact.html'));
+});
+
+app.listen(8080);
