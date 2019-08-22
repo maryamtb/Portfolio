@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html/MIME>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     
     <div class="navmenu">
         <nav class="navbar fixed-top navbar-light navbar-expand-sm navbar-template">
-            <a class="navbar-brand" href="index.html">MTB</a>
+            <a class="navbar-brand" href="/">MTB</a>
             <div class="d-flex flex-row order-2 order-sm-3">
                 <ul class="navbar-nav flex-row">
                     <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/Maryamtb17/likes"><i class="fab fa-twitter"></i></a></li>
@@ -31,7 +31,7 @@
             </div>
             <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">intro</a></li>
                     <li class="nav-item"><a class="nav-link" href="webapps.html">cool web apps</a></li>
                     <li class="nav-item"><a class="nav-link" href="iOsapps.html">cool iOS apps</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contact.html">leave a message?</a></li>
@@ -58,36 +58,30 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_name">First name *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
+                                        <input id="name" type="name" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_lastname">Last name *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
+                                        <input id="lastname" type="lastname" name="lastname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                                        <div class="lg-form">
+                                            <label for="form_subject">Subject *</label>
+                                            <input id="subject" name="subject" class="lg-textarea form-control" placeholder="Please enter a subject *" required="required" data-error="Subject is required."></input>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_need">Please specify your need *</label>
-                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                            <option value=""></option>
-                                            <option value="Request quotation">Schedule Interview</option>
-                                            <option value="Request order status">Freelance Collab</option>
-                                            <option value="Request copy of an invoice">Freelance Hire</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <label for="form_email">Email *</label>
+                                        <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -96,7 +90,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <textarea id="text" name="text" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -104,10 +98,43 @@
                                     <input type="submit" class="btn btn-info btn-send" value="Send message">
                                 </div>
                             </div>
-                            
                         </div>
-                    
                     </form>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script>
+                    $("form").on("submit", e => {
+                    e.preventDefault();
+                    const name = $("#name")
+                        .val()
+                        .trim();
+                    const lastname = $("#lastname")
+                        .val()
+                        .trim();
+                    const subject = $("#subject")
+                        .val()
+                        .trim();
+                    const email = $("#email")
+                        .val()
+                        .trim();
+                    const text = $("#text")
+                        .val()
+                        .trim();
+                    const data = {
+                        name,
+                        lastname,
+                        subject,
+                        email,
+                        text
+                    };
+                    $.post("/email", data)
+                        .then(() => {
+                        window.location.href = "/email/sent";
+                        })
+                        .catch(() => {
+                        window.location.href = "/error";
+                        });
+                    });
+                </script>
             </div>
             <footer class="page-footer">
                     <div class="footer-copyright text-center py-3">Copyright
@@ -116,10 +143,8 @@
             </footer>
         </div>
     </div>    
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/shards.min.js"></script>
+    
   </body>
 </html>
