@@ -3,13 +3,14 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const sendMail = require('./mail.js');
-
 const PORT = 8080;
 
 app.use(express.urlencoded({
     extended: false
 }));
 app.use(express.json());
+
+app.use(express.static(__dirname + '/public'));
 
 app.post('/email', (req, res) => {
     const { name, lastname, subject, email, text} = req.body;
@@ -31,15 +32,19 @@ app.get('/', function(req, res) {
 });
 
 app.get('/email/sent', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views','emailMessage.html'));
+    res.sendFile(path.join(__dirname,'views','/emailMessage.html'));
+});
+
+app.get('/error', (req, res) => {
+    res.sendFile(path.join(__dirname,'views','/errorMessage.html'));
 });
 
 app.get('/webapps.html', function(req, res) {
     res.sendFile(path.join(__dirname,'views','/webapps.html'));
 });
 
-app.get('/iOSapps.html', function(req, res) {
-    res.sendFile(path.join(__dirname,'views','/iOSapps.html'));
+app.get('/about.html', function(req, res) {
+    res.sendFile(path.join(__dirname,'views','/about.html'));
 });
 
 app.get('/contact.html', function(req, res) {

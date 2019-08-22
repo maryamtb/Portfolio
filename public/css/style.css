@@ -1,0 +1,8 @@
+#bodyMessage {
+    margin-top: 90px;
+}
+
+#sticky-footer {
+    position: fixed center;
+    bottom: 0;
+}

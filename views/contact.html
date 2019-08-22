@@ -1,87 +1,99 @@
-<!DOCTYPE html/MIME>
-<html>
-  <head>
+<!DOCTYPE html>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Maryam Touimi Benjelloun</title>
     <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
-    <!-- Load required Bootstrap and BootstrapVue CSS -->
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Load polyfills to support older browsers -->
-    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
+    </script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <!-- Load Vue followed by BootstrapVue -->
-    <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
-    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
-  </head>
-  <body>
-    
-    <div class="navmenu">
-        <nav class="navbar fixed-top navbar-light navbar-expand-sm navbar-template">
-            <a class="navbar-brand" href="/">MTB</a>
-            <div class="d-flex flex-row order-2 order-sm-3">
-                <ul class="navbar-nav flex-row">
-                    <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/Maryamtb17/likes"><i class="fab fa-twitter"></i></a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="https://github.com/maryamsgithub"><i class="fab fa-github"></i></a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/in/maryam-tb/"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">intro</a></li>
-                    <li class="nav-item"><a class="nav-link" href="webapps.html">cool web apps</a></li>
-                    <li class="nav-item"><a class="nav-link" href="iOsapps.html">cool iOS apps</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">leave a message?</a></li>
-                    <li class="nav-item font-weight-bold">
-                        <button type="button" class="btn btn-outline-info" href="images/Portfolio.pdf">Résumé</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+</head>
 
-    <div class="coolintro">
-        <div class="jumbotron jumbotron-fluid" style="background-color:cornsilk;">
-            <br />    
-            <div class="container">
-                <h3 class="mb-5">Leave a message 🤔</h3>
-                <form id="contact-form" method="post" action="contact.php" role="form">
-
+<body>
+    <header>
+        <div class="navmenu">
+            <nav class="navbar fixed-top navbar-white navbar-expand-sm navbar-template navbar-light bg-white">
+                <a class="navbar-brand" href="/" style="font-family: 'Dancing Script',cursive;font-size:27px;">Maryam
+                    Touimi Benjelloun</a>
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex flex-row">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/Maryamtb17/likes"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="https://github.com/maryamsgithub"><i
+                                    class="fab fa-github"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/in/maryam-tb/"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="/">intro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">about me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="webapps.html">cool web apps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">leave a message?</a></li>
+                        <li class="nav-item font-weight-bold">
+                            <button type="button" class="btn btn-outline-info">
+                                <a href="MaryamTouimiBenjelloun_CV.pdf">Résumé</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="bodyMessage">
+        <div class="contact">
+            <div class="jumbotron jumbotron-fluid" style="background-color:cornsilk;">
+                <br />
+                <div class="container">
+                    <h3 class="mb-5">Leave a message 🤔</h3>
+                    <form id="contact-form" method="post" role="form">
                         <div class="messages"></div>
-                    
                         <div class="controls">
-                    
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_name">First name *</label>
-                                        <input id="name" type="name" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
+                                        <input id="name" type="name" name="name" class="form-control"
+                                            placeholder="Please enter your first name *" required="required"
+                                            data-error="First name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_lastname">Last name *</label>
-                                        <input id="lastname" type="lastname" name="lastname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
+                                        <input id="lastname" type="lastname" name="lastname" class="form-control"
+                                            placeholder="Please enter your last name *" required="required"
+                                            data-error="Last name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                        <div class="lg-form">
-                                            <label for="form_subject">Subject *</label>
-                                            <input id="subject" name="subject" class="lg-textarea form-control" placeholder="Please enter a subject *" required="required" data-error="Subject is required."></input>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                                    <div class="lg-form">
+                                        <label for="form_subject">Subject *</label>
+                                        <input id="subject" name="subject" class="lg-textarea form-control"
+                                            placeholder="Please enter a subject *" required="required"
+                                            data-error="Subject is required."></input>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_email">Email *</label>
-                                        <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <input id="email" type="email" name="email" class="form-control"
+                                            placeholder="Please enter your email *" required="required"
+                                            data-error="Valid email is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -90,7 +102,9 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="form_message">Message *</label>
-                                        <textarea id="text" name="text" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <textarea id="text" name="text" class="form-control"
+                                            placeholder="Message for me *" rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -100,51 +114,57 @@
                             </div>
                         </div>
                     </form>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                <script>
-                    $("form").on("submit", e => {
-                    e.preventDefault();
-                    const name = $("#name")
-                        .val()
-                        .trim();
-                    const lastname = $("#lastname")
-                        .val()
-                        .trim();
-                    const subject = $("#subject")
-                        .val()
-                        .trim();
-                    const email = $("#email")
-                        .val()
-                        .trim();
-                    const text = $("#text")
-                        .val()
-                        .trim();
-                    const data = {
-                        name,
-                        lastname,
-                        subject,
-                        email,
-                        text
-                    };
-                    $.post("/email", data)
-                        .then(() => {
-                        window.location.href = "/email/sent";
-                        })
-                        .catch(() => {
-                        window.location.href = "/error";
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script>
+                        $("form").on("submit", e => {
+                            e.preventDefault();
+                            const name = $("#name")
+                                .val()
+                                .trim();
+                            const lastname = $("#lastname")
+                                .val()
+                                .trim();
+                            const subject = $("#subject")
+                                .val()
+                                .trim();
+                            const email = $("#email")
+                                .val()
+                                .trim();
+                            const text = $("#text")
+                                .val()
+                                .trim();
+                            const data = {
+                                name,
+                                lastname,
+                                subject,
+                                email,
+                                text
+                            };
+                            $.post("/email", data)
+                                .then(() => {
+                                    window.location.href = "/email/sent";
+                                })
+                                .catch(() => {
+                                    window.location.href = "/error";
+                                });
                         });
-                    });
-                </script>
+                    </script>
+                </div>
             </div>
-            <footer class="page-footer">
-                    <div class="footer-copyright text-center py-3">Copyright
-                            © <a href="#">MTB</a> 2019.
-                    </div>
-            </footer>
         </div>
-    </div>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-  </body>
+    </section>
+    <footer id="sticky-footer">
+            <div class="container text-center">Copyright
+                    © <a href="/" style="font-family: 'Dancing Script',cursive;font-size:17px;">MTB </a>2019.
+            </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</body>
+
 </html>
