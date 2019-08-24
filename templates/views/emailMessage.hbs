@@ -14,46 +14,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="navmenu">
-            <nav class="navbar fixed-top navbar-white navbar-expand-sm navbar-template navbar-light bg-white">
-                <a class="navbar-brand" href="/" style="font-family: 'Dancing Script',cursive;font-size:27px;">Maryam
-                    Touimi Benjelloun</a>
-                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="d-flex flex-row">
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/Maryamtb17/likes"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="https://github.com/maryamsgithub"><i
-                                    class="fab fa-github"></i></a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/in/maryam-tb/"><i
-                                    class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="/">intro</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/about">about me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/webapps">cool web apps</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/contact">leave a message?</a></li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/maryam-tb/"><button type="button"
-                                    class="btn btn-outline-primary"><i class="fab fa-linkedin"></i></button></a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="/"></a></li>
-                        <li>
-                            <a href="https://github.com/maryamsgithub"><button type="button"
-                                    class="btn btn-outline-dark"><i class="fab fa-github"></i></button></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+
+    {{>header}}
+
     <section id="bodyMessage" style="margin-top:80px;">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -62,11 +25,9 @@
             </div>
         </div>
     </section>
-    <footer id="sticky-footer">
-        <div class="container text-center">Copyright
-            © <a href="/" style="font-family: 'Dancing Script',cursive;font-size:17px;">MTB </a>2019.
-        </div>
-    </footer>
+
+    {{>footer}}
+
 </body>
 
 </html>
