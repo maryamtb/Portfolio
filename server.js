@@ -1,14 +1,30 @@
 require('dotenv').config()
+const path = require('path')
+const hbs = require('hbs')
 const express = require('express')
 const sendMail = require('./mail.js')
-const app = express()
-const path = require('path')
+
 const port = process.env.PORT
 
+const app = express()
+
+// Define paths for Express config
+const publicDirectoryPath = path.join(__dirname, './public')
+const viewsPath = path.join(__dirname, './templates/views')
+const partialsPath = path.join(__dirname, './templates/partials')
+
+// Setup handlebars engine and views location
+app.set('view engine', 'hbs')
+app.set('views', viewsPath)
+hbs.registerPartials(partialsPath)
+
+// Setup static directory to serve
+app.use(express.static(publicDirectoryPath))
 
 app.use(express.urlencoded({
     extended: false
 }));
+
 app.use(express.json())
 
 app.use(express.static(__dirname + '/public'))
@@ -28,28 +44,40 @@ app.post('/email', (req, res) => {
     });
 });
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname,'views','/index.html'))
+app.get('', (req, res) => {
+    res.render('index', {
+    
+    })
 });
 
 app.get('/email/sent', (req, res) => {
-    res.sendFile(path.join(__dirname,'views','/emailMessage.html'))
+    res.render('emailMessage', {
+    
+    })
 });
 
 app.get('/error', (req, res) => {
-    res.sendFile(path.join(__dirname,'views','/errorMessage.html'))
+    res.render('errorMessage', {
+    
+    })
 });
 
-app.get('/webapps.html', function(req, res) {
-    res.sendFile(path.join(__dirname,'views','/webapps.html'))
+app.get('/webapps', (req, res) => {
+    res.render('webapps', {
+    
+    })
 });
 
-app.get('/about.html', function(req, res) {
-    res.sendFile(path.join(__dirname,'views','/about.html'))
+app.get('/about', (req, res) => {
+    res.render('about', {
+    
+    })
 });
 
-app.get('/contact.html', function(req, res) {
-    res.sendFile(path.join(__dirname,'views','/contact.html'))
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+    
+    })
 });
 
 app.listen(port, () =>  {
