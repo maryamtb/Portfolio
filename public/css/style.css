@@ -1,8 +1,10 @@
 #bodyMessage {
-    margin-top: 90px;
+    margin-top: 60px;
+    margin-bottom: -10px;
 }
 
 #sticky-footer {
     position: fixed center;
-    bottom: 0;
+    bottom: 0 auto;
+    padding-bottom: 20px;
 }
