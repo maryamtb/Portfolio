@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
+
 #bodyMessage {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: -10px;
 }
 
 #sticky-footer {
     position: fixed 0 center;
     margin: 0 auto;
-    /* padding-bottom: 20px; */
+    padding-bottom: 10px;
 }
 
 .top-buffer { margin-top:40px; }
+
+#logo {
+    font-family: 'Dancing Script',cursive;
+    font-size: 27px;
+}
+
+@media only screen and (max-width: 360px) {
+    #logo { font-size:25px; }
+    #bodyMessage { margin-top: 80px; }
+}
+
+@media only screen and (max-width: 375px) {
+    #bodyMessage { margin-top: 80px; }
+    .mb-5 { font-size: 24px; }
+}
