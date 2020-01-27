@@ -21,6 +21,8 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
+app.use(express.static('public/assets')); 
+
 app.use(express.urlencoded({
     extended: false
 }));
@@ -46,37 +48,27 @@ app.post('/email', (req, res) => {
 
 app.get('', (req, res) => {
     res.render('index', {
-    
     })
 });
 
 app.get('/email/sent', (req, res) => {
     res.render('emailMessage', {
-    
     })
 });
 
 app.get('/error', (req, res) => {
     res.render('errorMessage', {
-    
     })
 });
 
-app.get('/webapps', (req, res) => {
-    res.render('webapps', {
-    
+app.get('/projects', (req, res) => {
+    res.render('projects', {
     })
 });
 
-app.get('/about', (req, res) => {
-    res.render('about', {
-    
-    })
-});
 
 app.get('/contact', (req, res) => {
     res.render('contact', {
-    
     })
 });
 

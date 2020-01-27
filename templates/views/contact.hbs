@@ -28,27 +28,28 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 
-<body>
+<body id="contact">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8N7X42"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     {{>header}}
 
-    <section id="bodyMessage">
-        <div class="contact">
-            <div class="jumbotron jumbotron-fluid" style="background-color:cornsilk;">
-                <div class="container">
-                    <h3 class="mb-5">Leave a message 🤔</h3>
-                    <form id="contact-form" method="post" role="form">
+    <section>
+        <div>
+            <div>
+                <div class="container" style="width: 600px;margin-bottom:20px;">
+                    <h3 class="mb-4">Get in touch</h3>
+                    <form id="contact-form" method="post" role="form" >
                         <div class="messages"></div>
                         <div class="controls">
+                            <br />
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_name">First name *</label>
                                         <input id="name" type="name" name="name" class="form-control"
-                                            placeholder="Please enter your first name *" required="required"
+                                            placeholder="Please enter your first name" required="required"
                                             data-error="First name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -57,7 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="form-group">
                                         <label for="form_lastname">Last name *</label>
                                         <input id="lastname" type="lastname" name="lastname" class="form-control"
-                                            placeholder="Please enter your last name *" required="required"
+                                            placeholder="Please enter your last name" required="required"
                                             data-error="Last name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -65,19 +66,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="lg-form">
-                                        <label for="form_subject">Subject *</label>
-                                        <input id="subject" name="subject" class="lg-textarea form-control"
-                                            placeholder="Please enter a subject *" required="required"
-                                            data-error="Subject is required."></input>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_email">Email *</label>
                                         <input id="email" type="email" name="email" class="form-control"
-                                            placeholder="Please enter your email *" required="required"
+                                            placeholder="Please enter your email" required="required"
                                             data-error="Valid email is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -85,10 +77,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
+                                    <div class="lg-form">
+                                        <label for="form_subject">Subject *</label>
+                                        <input id="subject" name="subject" class="lg-textarea form-control"
+                                            placeholder="Please enter a subject" required="required"
+                                            data-error="Subject is required."></input>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="form_message">Message *</label>
                                         <textarea id="text" name="text" class="form-control"
-                                            placeholder="Message for me *" rows="4" required="required"
+                                            placeholder="Message for me" rows="4" required="required"
                                             data-error="Please, leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -99,6 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                     </form>
+                    <br />
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                     <script>
                         $("form").on("submit", e => {
