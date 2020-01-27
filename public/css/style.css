@@ -26,6 +26,8 @@
 }
 
 .top-buffer { margin-top:40px; }
+.bottom-buffer { margin-bottom:40px; }
+
 
 #logo {
     font-family: 'Rubik';

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "env-cmd -f ./config/dev.env nodemon server.js"
+    "dev": "env-cmd -f ./config/.env nodemon server.js"
   },
   "keywords": [],
   "author": "",
