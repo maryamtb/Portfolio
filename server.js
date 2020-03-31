@@ -3,7 +3,6 @@ const path = require('path')
 const hbs = require('hbs')
 const express = require('express')
 const sendMail = require('./mail.js')
-var favicon = require('serve-favicon');
 
 const port = process.env.PORT
 
@@ -13,9 +12,8 @@ const app = express()
 const publicDirectoryPath = path.join(__dirname, './public')
 const viewsPath = path.join(__dirname, './templates/views')
 const partialsPath = path.join(__dirname, './templates/partials')
+const faviconPath = path.join(__dirname,'./public/assets/favicon.ico');
 
-
-app.use(favicon(path.join(__dirname,'./public/assets/favicon.ico')));
 
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
@@ -26,6 +24,8 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicDirectoryPath))
 
 app.use(express.static('public/assets')); 
+
+app.use(express.static(faviconPath));
 
 app.use(express.urlencoded({
     extended: false

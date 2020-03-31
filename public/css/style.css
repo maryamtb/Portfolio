@@ -3,14 +3,23 @@
 .wave {
     background:url("../assets/wave.svg");
     background-repeat: no-repeat;
-    opacity: 75%;
+    opacity: 65%;
     background-attachment: fixed;
     background-position: bottom;
 }
 
+.logo-set {
+    margin-top: 100px;
+}
+
+.logo-set > img {
+    justify-content: space-evenly;
+    margin: 13px;
+}
+
 #index {
     margin-top: 180px;
-    height:70vh;
+    height:80vh;
     text-align: center;
 }
 
@@ -18,15 +27,14 @@
     margin-top: 80px;
     height:100vh;
     display: flex;
-    /* justify-content: center; */
 }
 
-.container {
-        margin-top: 30px;
-        height:100vh;
-        /* justify-content: center; */
-    
-}
+#projectContainer {
+    margin-top: 30px;
+    height:100vh;
+    justify-content: center;
+} 
+
 
 #contact {
     margin-top: 80px;
