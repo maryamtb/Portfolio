@@ -3,6 +3,7 @@ const path = require('path')
 const hbs = require('hbs')
 const express = require('express')
 const sendMail = require('./mail.js')
+var favicon = require('serve-favicon');
 
 const port = process.env.PORT
 
@@ -13,6 +14,8 @@ const publicDirectoryPath = path.join(__dirname, './public')
 const viewsPath = path.join(__dirname, './templates/views')
 const partialsPath = path.join(__dirname, './templates/partials')
 
+
+app.use(favicon(path.join(__dirname,'./public/assets/favicon.ico')));
 
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
