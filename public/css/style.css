@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
-.wave {
-    background:url("../assets/wave.svg");
-    background-repeat: no-repeat;
-    opacity: 65%;
-    background-attachment: fixed;
-    background-position: bottom;
+#logo {
+    font-family: 'Rubik';
+    font-size: 20px;
 }
 
 .logo-set {
@@ -16,6 +13,15 @@
     justify-content: space-evenly;
     margin: 13px;
 }
+
+.wave {
+    background:url("../assets/wave.svg");
+    background-repeat: no-repeat;
+    opacity: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
 
 #index {
     margin-top: 180px;
@@ -33,30 +39,24 @@
     margin-top: 30px;
     height:100vh;
     justify-content: center;
-} 
-
+}
 
 #contact {
     margin-top: 80px;
-    height:100vh;
+    height:80vh;
+    justify-content: center;
     text-align: center;
 }
 
 .top-buffer { margin-top:40px; }
+
 .bottom-buffer { margin-bottom:40px; }
 
-
-#logo {
-    font-family: 'Rubik';
-    font-size: 20px;
-}
-
-@media only screen and (max-width: 360px) {
-    #logo { font-size:25px; }
-    #bodyMessage { margin-top: 80px; }
-}
-
-@media only screen and (max-width: 375px) {
-    #bodyMessage { margin-top: 80px; }
-    .mb-5 { font-size: 24px; }
+@media only screen and (max-width: 600px) {
+    #logo { font-size:23px; }
+    #bodyMessage { margin-top: 60px; }
+    .logo-set > img { justify-content: space-evenly; margin: 3px;}
+    #projectContainer { height: 150vh;}
+    #contact { margin-top: 70px; height: 10vh;}
+    #contact-form { width: 100%; margin-bottom: 40px;}
 }

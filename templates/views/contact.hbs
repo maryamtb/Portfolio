@@ -2,151 +2,156 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K8N7X42');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K8N7X42');</script>
     <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151178536-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-151178536-1');
+        gtag('config', 'UA-151178536-1');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Contact</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 
 <body id="contact">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8N7X42"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8N7X42" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {{>header}}
 
     <section>
         <div>
             <div>
-                <div class="container" style="width: 600px;margin-bottom:20px;">
+                <div class="container">
                     <h3 class="mb-4">Get in touch</h3>
-                    <h6 style="color: rgb(42, 176, 199);">🔥Open for freelance projects 🔥</h6>
-                    <form id="contact-form" method="post" role="form" class="responsive">
-                        <div class="messages"></div>
-                        <div class="controls">
-                            <br />
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">First name *</label>
-                                        <input id="name" type="name" name="name" class="form-control"
-                                            placeholder="Please enter your first name" required="required"
-                                            data-error="First name is required.">
-                                        <div class="help-block with-errors"></div>
+                    <h6>🔥Open for freelance projects 🔥</h6>
+                    <div class="form-group">
+                        <form id="contact-form" method="post" role="form">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">First name *</label>
+                                            <input id="name" type="name" name="name" class="form-control"
+                                                placeholder="Please enter your first name" required="required"
+                                                data-error="First name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Last name *</label>
+                                            <input id="lastname" type="lastname" name="lastname" class="form-control"
+                                                placeholder="Please enter your last name" required="required"
+                                                data-error="Last name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Last name *</label>
-                                        <input id="lastname" type="lastname" name="lastname" class="form-control"
-                                            placeholder="Please enter your last name" required="required"
-                                            data-error="Last name is required.">
-                                        <div class="help-block with-errors"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="email" type="email" name="email" class="form-control"
+                                                placeholder="Please enter your email" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="lg-form">
+                                            <label for="form_subject">Subject *</label>
+                                            <input id="subject" name="subject" class="lg-textarea form-control"
+                                                placeholder="Please enter a subject" required="required"
+                                                data-error="Subject is required."></input>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="text" name="text" class="form-control"
+                                                placeholder="Message for me" rows="4" required="required"
+                                                data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div><br></br><br></br><br></br>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-warning btn-send" value="Send message">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="email" type="email" name="email" class="form-control"
-                                            placeholder="Please enter your email" required="required"
-                                            data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="lg-form">
-                                        <label for="form_subject">Subject *</label>
-                                        <input id="subject" name="subject" class="lg-textarea form-control"
-                                            placeholder="Please enter a subject" required="required"
-                                            data-error="Subject is required."></input>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="text" name="text" class="form-control"
-                                            placeholder="Message for me" rows="4" required="required"
-                                            data-error="Please, leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div><br></br><br></br><br></br>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-info btn-send" value="Send message" >
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <br />
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                    <script>
-                        $("form").on("submit", e => {
-                            e.preventDefault();
-                            const name = $("#name")
-                                .val()
-                                .trim();
-                            const lastname = $("#lastname")
-                                .val()
-                                .trim();
-                            const subject = $("#subject")
-                                .val()
-                                .trim();
-                            const email = $("#email")
-                                .val()
-                                .trim();
-                            const text = $("#text")
-                                .val()
-                                .trim();
-                            const data = {
-                                name,
-                                lastname,
-                                subject,
-                                email,
-                                text
-                            };
-                            $.post("/email", data)
-                                .then(() => {
-                                    window.location.href = "/email/sent";
-                                })
-                                .catch(() => {
-                                    window.location.href = "/error";
-                                });
-                        });
-                    </script>
+                        </form>
+                    </div>
                 </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script>
+                    $("form").on("submit", e => {
+                        e.preventDefault();
+                        const name = $("#name")
+                            .val()
+                            .trim();
+                        const lastname = $("#lastname")
+                            .val()
+                            .trim();
+                        const subject = $("#subject")
+                            .val()
+                            .trim();
+                        const email = $("#email")
+                            .val()
+                            .trim();
+                        const text = $("#text")
+                            .val()
+                            .trim();
+                        const data = {
+                            name,
+                            lastname,
+                            subject,
+                            email,
+                            text
+                        };
+                        $.post("/email", data)
+                            .then(() => {
+                                window.location.href = "/email/sent";
+                            })
+                            .catch(() => {
+                                window.location.href = "/error";
+                            });
+                    });
+                </script>
             </div>
         </div>
     </section>
 
     {{>footer}}
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"	
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"	
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
 </body>
