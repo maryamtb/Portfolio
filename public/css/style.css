@@ -38,14 +38,14 @@
 #projectContainer {
     margin-top: 30px;
     height:100vh;
-    justify-content: center;
 }
 
 #contact {
     margin-top: 80px;
-    height:80vh;
-    justify-content: center;
-    text-align: center;
+}
+
+.row {
+    margin-bottom: 50px;
 }
 
 .top-buffer { margin-top:40px; }
@@ -59,4 +59,5 @@
     #projectContainer { height: 150vh;}
     #contact { margin-top: 70px; height: 10vh;}
     #contact-form { width: 100%; margin-bottom: 40px;}
+    .row { margin-bottom: 0px;}
 }
