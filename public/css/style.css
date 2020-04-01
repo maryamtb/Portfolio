@@ -22,7 +22,6 @@
     background-position: bottom;
 }
 
-
 #index {
     margin-top: 180px;
     height:80vh;
@@ -31,13 +30,15 @@
 
 #projects {
     margin-top: 80px;
-    height:100vh;
-    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 #projectContainer {
-    margin-top: 30px;
-    height:100vh;
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 #contact {
@@ -56,8 +57,10 @@
     #logo { font-size:23px; }
     #bodyMessage { margin-top: 60px; }
     .logo-set > img { justify-content: space-evenly; margin: 3px;}
-    #projectContainer { height: 150vh;}
-    #contact { margin-top: 70px; height: 10vh;}
+    #contact { margin-top: 70px;}
     #contact-form { width: 100%; margin-bottom: 40px;}
     .row { margin-bottom: 0px;}
+    #contact {text-align: center;}
+    /* #projectContainer {margin-left: 15px; } */
+    .navmenu { text-align: right;}
 }
