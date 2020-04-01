@@ -43,6 +43,7 @@
 
 #contact {
     margin-top: 80px;
+    text-align: center;
 }
 
 .row {
@@ -56,11 +57,10 @@
 @media only screen and (max-width: 600px) {
     #logo { font-size:23px; }
     #bodyMessage { margin-top: 60px; }
-    .logo-set > img { justify-content: space-evenly; margin: 3px;}
+    .logo-set > img { justify-content: space-evenly; margin: 0px;transform: scale(0.5)}
     #contact { margin-top: 70px;}
     #contact-form { width: 100%; margin-bottom: 40px;}
     .row { margin-bottom: 0px;}
     #contact {text-align: center;}
-    /* #projectContainer {margin-left: 15px; } */
     .navmenu { text-align: right;}
 }
