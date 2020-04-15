@@ -63,4 +63,5 @@
     .row { margin-bottom: 0px;}
     #contact {text-align: center;}
     .navmenu { text-align: right;}
+    .banner {overflow: hidden;}
 }
