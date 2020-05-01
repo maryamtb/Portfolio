@@ -46,6 +46,10 @@
     text-align: center;
 }
 
+#form {
+    padding: 30px 220px 30px 220px;
+}
+
 .row {
     margin-bottom: 50px;
 }
