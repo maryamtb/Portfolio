@@ -35,6 +35,11 @@
     justify-content: center;
 }
 
+#projsubt {
+    display:flex;
+    align-items:flex-start;
+}
+
 #projectContainer {
     margin-top: 80px;
     text-align: center;
