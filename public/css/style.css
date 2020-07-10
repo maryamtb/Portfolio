@@ -35,6 +35,10 @@
     justify-content: center;
 }
 
+#italic {
+    font-style: italic;
+}
+
 #projsubt {
     display:flex;
     align-items:flex-start;
