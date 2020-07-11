@@ -60,6 +60,16 @@ app.get('/about', (req, res) => {
     })
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects', {
+    })
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+    })
+});
+
 app.get('/email/sent', (req, res) => {
     res.render('emailMessage', {
     })
@@ -67,17 +77,6 @@ app.get('/email/sent', (req, res) => {
 
 app.get('/error', (req, res) => {
     res.render('errorMessage', {
-    })
-});
-
-app.get('/projects', (req, res) => {
-    res.render('projects', {
-    })
-});
-
-
-app.get('/contact', (req, res) => {
-    res.render('contact', {
     })
 });
 
