@@ -9,13 +9,13 @@
     margin-top: 100px;
 }
 
-.logo-set > img {
+.logo-set>img {
     justify-content: space-evenly;
     margin: 13px;
 }
 
 .wave {
-    background:url("../assets/wave.svg");
+    background: url("../assets/wave.svg");
     background-repeat: no-repeat;
     opacity: 100%;
     height: 65vh;
@@ -25,7 +25,7 @@
 
 #index {
     margin-top: 180px;
-    height:100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -40,12 +40,12 @@
 }
 
 #projsubt {
-    display:flex;
-    align-items:flex-start;
+    display: flex;
+    align-items: flex-start;
 }
 
 #projectContainer {
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
     justify-content: center;
     margin-bottom: 40px;
@@ -53,6 +53,11 @@
 
 #contact {
     margin-top: 80px;
+}
+
+#contact h3,
+#sub,
+btn {
     text-align: center;
 }
 
@@ -64,22 +69,68 @@
     margin-bottom: 50px;
 }
 
-.top-buffer { margin-top:40px; }
+.top-buffer {
+    margin-top: 40px;
+}
 
-.bottom-buffer { margin-bottom:40px; }
+.bottom-buffer {
+    margin-bottom: 40px;
+}
 
 @media only screen and (max-width: 600px) {
-    #logo { font-size:23px; }
-    #index {height: 70vh;}
-    .wave {height: 100%;}
-    #bodyMessage { margin-top: 60px; }
-    .logo-set {margin-top: 50px; line-height: 5.0;} 
-    .logo-set > img { justify-content: space-evenly; margin: 0px;transform: scale(0.85)}
-    #contact { margin-top: 70px;}
-    #contact-form { width: 100%; margin-bottom: 40px;}
-    .row { margin-bottom: 0px;}
-    #contact {text-align: center;}
-    .navmenu { text-align: right;}
-    .banner {overflow: hidden;}
-    #form {padding: 0px 0px 0px 0px;}
+    #logo {
+        font-size: 23px;
+    }
+
+    #index {
+        height: 70vh;
+    }
+
+    .wave {
+        height: 100%;
+    }
+
+    #bodyMessage {
+        margin-top: 60px;
+    }
+
+    .logo-set {
+        margin-top: 50px;
+        line-height: 5.0;
+    }
+
+    .logo-set>img {
+        justify-content: space-evenly;
+        margin: 0px;
+        transform: scale(0.85)
+    }
+
+    #contact {
+        margin-top: 70px;
+    }
+
+    #contact-form {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .row {
+        margin-bottom: 0px;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    .navmenu {
+        text-align: right;
+    }
+
+    .banner {
+        overflow: hidden;
+    }
+
+    #form {
+        padding: 0px 0px 0px 0px;
+    }
 }
