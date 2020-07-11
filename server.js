@@ -55,6 +55,11 @@ app.get('', (req, res) => {
     })
 });
 
+app.get('/about', (req, res) => {
+    res.render('about', {
+    })
+});
+
 app.get('/email/sent', (req, res) => {
     res.render('emailMessage', {
     })

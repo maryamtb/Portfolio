@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="../assets/meta-img.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>MTB - hey!</title>
+    <title>MTB - About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
@@ -34,32 +34,10 @@
 </head>
 
 <style>
-    .banner {
-        padding: 10px;
-        margin-top: 50px;
-        margin-bottom: -70px;
-        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    }
 
-    .bannerText {
-        color: white;
-        font-weight: 600;
-        white-space: nowrap;
-        animation: leftToRight 8s infinite;
-    }
-
-    @keyframes leftToRight {
-        0% {
-            margin-left: -200px;
-        }
-
-        100% {
-            margin-left: 1500px;
-        }
-    }
 </style>
 
-<body class="wave">
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8N7X42" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -67,29 +45,18 @@
 
     {{>header}}
 
-    <div id="index">
-        <section>
-            <div>
-                <div>
-                    <div class="container">
-                        <h3 class="mb-5">Hello 👋🏼</h3>
-                        <p>My name is Maryam Touimi Benjelloun and I'm from Casablanca, Morocco. </p>
-                        <p>I'm currently working as a Frontend Developer at <a href="https://www.abbasstudios.com">Abbas</a>.
-                            <div class="logo-set">
-                                <img src='react.png' alt="react-logo" height="50" width="50">
-                                <img src='gsap.png' height="50" width="50">
-                                <img src='python.png' height="50" width="50">
-                                <img src='html.png' height="50" width="50">
-                                <img src='node.png' height="50" width="85">
-                                <img src='css.svg' height="50" width="50">
-                                <img src='swift.png' height="45" width="50">
-                                <img src='vue.png' height="35" width="50">
-                            </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+    <div class="container" id="projectContainer">
+                    <h3 class="mb-4">About</h3>
+                <p>Frontend Developer at Abbas + Freelance. Previously: Mozilla Open Labs, TED Conferences, Roche</p>
+                <p>I'm proficient in React/Redux, Vue/Vuex, Node.js, Python, Ruby on Rails, Java, and C++</p>
+                <p>GSAP, Anime, Three, D3, styled-components</p>
+                <p>Firebase, MongoDB, learning AWS</p>
+                <p>JEST, Mocha</p>
+                <p>Trilingual in English, French, and Arabic</p>
+                <p>September 2014 - Computer Science major for 2yrs at The University of Miami in Miami, Florida</p>
+                <p>May 2019 - BSc. in Management Information Systems from The American University of Paris</p>
+                <p>September 2020 - MA Digital Management student at Hyper Island Stockholm</p>
+                <p><a href="/contact">Ask for my CV</a></p>
     </div>
 
     {{>footer}}
