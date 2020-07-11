@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
+.navbar {
+    border-bottom: 0.5px solid black;
+    height: 60px;
+    font-size: 15px;
+}
+
+
 #logo {
     font-family: 'Rubik';
     font-size: 20px;
+    border-right: 1px solid black;
+    height: 60px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+#logo:hover {
+    transform: scale(1.5);
+    border-right: 1px solid transparent;
+    transition: transform .4s; 
 }
 
 .logo-set {
@@ -24,7 +41,7 @@
 }
 
 #index {
-    margin-top: 180px;
+    margin-top: 100px;
     height: 100%;
     text-align: center;
 }
@@ -45,7 +62,7 @@
 }
 
 #projectContainer {
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
     justify-content: center;
     margin-bottom: 40px;

@@ -30,27 +30,27 @@
     <link rel="icon" href="/favicon.ico?">
 </head>
 
-<body id="contact">
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8N7X42" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {{>header}}
 
-    <div class="container">
-        <h3 class="mb-4">Contact</h3>
+    <div class="projectContainer">
+        <h4 class="mb-2" style="text-align: center;margin-top: 45px;">Contact</h4>
         <div id="form">
-            <div class="form-group">
-                <form id="contact-form" method="post" role="form">
+            <div class="form-group ">
+                <form id="contact-form" method="post" role="form" >
                     <div class="messages"></div>
                     <div class="controls">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="form_name">First name *</label>
+                                    {{!-- <label for="form_name">First name *</label> --}}
                                     
                                     <input id="name" type="name" name="name" class="form-control"
-                                        required="required"
+                                        required="required" placeholder="First Name" 
                                         data-error="First name is required.">
                                         
                                     <div class="help-block with-errors"></div>
@@ -58,9 +58,9 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="form_lastname">Last name *</label>
+                                    {{!-- <label for="form_lastname">Last name *</label> --}}
                                     <input id="lastname" type="lastname" name="lastname" class="form-control"
-                                         required="required"
+                                         required="required" placeholder="Last Name"
                                         data-error="Last name is required.">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -69,9 +69,9 @@
                         {{!-- <div class="row"> --}}
                             <div class="col-md-9">
                                 <div class="form-group">
-                                    <label for="form_email">Email *</label>
+                                    <label for="form_email"> </label>
                                     <input id="email" type="email" name="email" class="form-control"
-                                        required="required"
+                                        required="required" placeholder="Email"
                                         data-error="Valid email is required.">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -80,9 +80,9 @@
                         {{!-- <div class="row"> --}}
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="form_subject">Subject *</label>
+                                    <label for="form_subject"></label>
                                     <input id="subject" name="subject" class="lg-textarea form-control"
-                                        required="required"
+                                        required="required" placeholder="Subject"
                                         data-error="Subject is required."></input>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -91,14 +91,14 @@
                         {{!-- <div class="row"> --}}
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="form_message">Message *</label>
+                                    <label for="form_message"> </label>
                                     <textarea id="text" name="text" class="form-control" 
-                                        rows="4" required="required"
+                                        rows="4" required="required" placeholder="Message for me"
                                         data-error="Please, leave us a message."></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="col-md-12" id="sub">
-                                    <input type="submit" class="btn btn-danger btn-send btn-pill" value="Send message">
+                                <input type="submit" class="btn btn-danger btn-send btn-pill" value="Send message">
                                 </div>
                             </div>
                         {{!-- </div> --}}
