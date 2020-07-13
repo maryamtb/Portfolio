@@ -120,6 +120,18 @@ btn {
         font-size: 23px;
     }
 
+    .title {
+        font-size: 20px;
+    }
+
+    .name:hover a {
+        font-size: 25px;
+    }
+
+    #work:hover {
+        font-size: 25px;
+    }
+
     #index {
         height: 70vh;
     }
