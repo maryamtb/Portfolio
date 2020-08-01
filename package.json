@@ -1,13 +1,13 @@
 {
   "name": "mtb",
   "version": "1.0.0",
-  "description": "",
+  "description": "Maryam Touimi Benjelloun's portfolio",
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
     "dev": "env-cmd -f ./config/.env nodemon server.js"
   },
-  "keywords": [],
+  "keywords": ["maryam touimi benjelloun", "maryam tb", "software engineer", "web developer", "freelance"],
   "author": "",
   "license": "ISC",
   "dependencies": {
