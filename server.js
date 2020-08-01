@@ -55,6 +55,17 @@ app.get('', (req, res) => {
     })
 });
 
+app.use('/robots.txt', function (req, res, next) {
+    res.type('text/plain')
+    res.send("User-agent: *\nAllow: /");
+});
+
+app.get('/sitemap.xml', function(req, res) {
+    // res.sendFile('./sitemap.xml');
+    res.sendFile(__dirname + '/sitemap.xml');
+
+});
+
 app.get('/about', (req, res) => {
     res.render('about', {
     })
