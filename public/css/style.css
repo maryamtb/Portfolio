@@ -17,14 +17,6 @@
     padding-top: 15px;
 }
 
-#logo:hover {
-    transform: scale(1.5);
-    border-right: 0.5px solid transparent;
-    transition: transform .4s;
-    font-weight: 900;
-
-}
-
 .logo-set {
     margin-top: 70px;
 }
