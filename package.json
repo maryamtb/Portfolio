@@ -7,16 +7,22 @@
     "start": "node server.js",
     "dev": "env-cmd -f ./config/.env nodemon server.js"
   },
-  "keywords": ["maryam touimi benjelloun", "maryam tb", "software engineer", "web developer", "freelance"],
+  "keywords": [
+    "maryam touimi benjelloun",
+    "maryam tb",
+    "software engineer",
+    "web developer",
+    "freelance"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
     "hbs": "^4.1.1",
-    "nodemailer": "^6.4.10",
+    "nodemailer": "^6.4.17",
     "nodemailer-mailgun-transport": "^1.4.0",
     "request": "^2.88.2",
     "shards-ui": "^3.0.0"
@@ -24,6 +30,6 @@
   "devDependencies": {
     "env-cmd": "^9.0.3",
     "nodemon": "^1.19.4",
-    "yargs-parser": ">=5.0.0-security.0"
+    "yargs-parser": "^20.2.4"
   }
 }
