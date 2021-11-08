@@ -141,8 +141,16 @@ btn {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .navbar {
+        height: 73px;
+    }
     #logo {
-        font-size: 23px;
+        /* font-size: 23px; */
+        /* height: 73px; */
+        margin-top: 0px;
+        /* position: rel; */
+        top: 0;
     }
 
     .title {
@@ -170,7 +178,7 @@ btn {
     }
 
     .logo-set {
-        margin-top: 50px;
+        /* margin-top: 50px; */
         line-height: 5.0;
     }
 
