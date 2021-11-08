@@ -184,7 +184,13 @@ btn {
         /* line-height: 5.0; */
         position: absolute;
         right: 20px;
+        
         /* margin-left: 300px; */
+    }
+
+    .nav-item:nth-child(1) {
+        margin-top: 50px;
+        /* position: absolute; */
     }
 
     .logo-set>img {
