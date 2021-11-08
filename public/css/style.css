@@ -142,14 +142,16 @@ btn {
 
 @media only screen and (max-width: 600px) {
 
-    .navbar {
-        height: 73px;
+    #nav {
+        /* height: 73px; */
+        border-top: 0.5px solid black;
+
     }
     #logo {
         /* font-size: 23px; */
-        /* height: 73px; */
+        /* height: 30px; */
         margin-top: 0px;
-        /* position: rel; */
+        position: fixed;
         top: 0;
     }
 
@@ -177,9 +179,12 @@ btn {
         margin-top: 60px;
     }
 
-    .logo-set {
+    #logo-set {
         /* margin-top: 50px; */
-        line-height: 5.0;
+        /* line-height: 5.0; */
+        position: absolute;
+        right: 20px;
+        /* margin-left: 300px; */
     }
 
     .logo-set>img {
