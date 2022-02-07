@@ -76,6 +76,11 @@ app.get('/projects', (req, res) => {
     })
 });
 
+// app.get('/laboratory', (req, res) => {
+//     res.render('laboratory', {
+//     })
+// });
+
 app.get('/contact', (req, res) => {
     res.render('contact', {
     })
