@@ -2,7 +2,7 @@ require("dotenv").config();
 const path = require("path");
 const hbs = require("hbs");
 const express = require("express");
-const sendMail = require("./mail.js");
+const sendMail = require("./email.js");
 
 const port = process.env.PORT;
 
