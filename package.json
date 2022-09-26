@@ -25,7 +25,7 @@
     "gulp": "^4.0.2",
     "hbs": "^4.1.1",
     "nodemailer": "^6.4.17",
-    "nodemailer-mailgun-transport": "^1.4.0",
+    "nodemailer-mailgun-transport": "^2.1.5",
     "request": "^2.88.2",
     "shards-ui": "^3.0.0"
   },
