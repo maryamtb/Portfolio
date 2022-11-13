@@ -1,3 +1,3 @@
 ## Portfolio 👍🏼🚀
 
-### https://maryamtb.herokuapp.com
+### https://maryamtb.com
